@@ -1,8 +1,8 @@
-# Install script for directory: D:/__DATA/Documents/UTEC/ADS2020-1/3n
+# Install script for directory: D:/__DATA/Documents/UTEC/ADS2020-1/CountPointers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/3n")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/CountPointers")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/__DATA/Documents/UTEC/ADS2020-1/3n/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/__DATA/Documents/UTEC/ADS2020-1/CountPointers/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
