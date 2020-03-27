@@ -22,12 +22,18 @@ int cycle(int num) {
 }
 
 int findLength(int i ,int j) {
-    int currentMax = 0;
+    int currentMax = 0, temp = 0, result;
     cout << i << ' ' << j;
+    if( j <= i) {
+        temp = i;
+        i = j;
+        j = temp;
+    }
 
     for (i ; i <= j ; i++) {
-        if(cycle(i) > currentMax)
-            currentMax = cycle(i);
+        result = cycle(i);
+        if (result > currentMax)
+            currentMax = result;
     }
     return currentMax;
 }
@@ -48,6 +54,7 @@ int main(){
         result = findLength( arr[k], arr[k+1]);
         cout << " " << result << endl;
     }
+    cout << endl;
 
     return 0;
 }
